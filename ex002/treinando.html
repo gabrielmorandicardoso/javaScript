@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando JS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+             }
+    input#button {
+                margin: 10px;
+             }
+
+             div {
+                margin: 10px;
+             }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <input type="number" name="txt1" id="txt1" placeholder="número 1"> +
+        <input type="number" name="txt2" id="txt2" placeholder="número 2"> =
+        <div id="res"> Resultado </div>
+        <input id="button" type="button" value="Somar" onclick="somar()">
+    </form>
+    <script>
+        function somar() {
+        var t1 = window.document.getElementById('txt1');
+        var t2 = window.document.getElementById('txt2');
+        var n1 = Number(t1.value)
+        var n2 = Number(t2.value)
+        var r = n1 + n2
+        res.innerHTML = r
+        }
+    </script>
+</body>
+</html>
