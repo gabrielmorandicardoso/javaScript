@@ -6,15 +6,15 @@ var hora = data.getHours()
 msg.innerHTML = 'Agora são ' + hora + ' horas.'
 if(hora >=0 && hora < 12){
     //bom dia
-    img.src = "manha.png"
+    img.src = "imagens/manha.png"
     document.body.style.backgroundColor = '#eccd9f'
 }else if (hora >=12 && hora <18){
     //boa tarde
-    img.src = "tarde.png"
+    img.src = "imagens/tarde.png"
     document.body.style.backgroundColor = '#b9846f'
 }else {
     //boa noite
-    img.src = "noite.png"
+    img.src = "imagens/noite.png"
     document.body.style.backgroundColor = '#515154'
 }
 }
