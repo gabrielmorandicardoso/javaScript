@@ -10,19 +10,18 @@
     <h1>A onde você mora?</h1>
     <form action="" method="get">
         <input type="text" name="txt1" id="txt1">
-       A sua nacionalidade é: <input type="button" value="pesquisar" onclick="pes()">
-       <div id="res"> Olá</div>
+       A sua nacionalidade é: <input type="button" value="pesquisar" onclick="pesquisar()">
+       <div id="res"></div>
     </form>
     <script>
-        function pes() {
-            var t1 = document.getElementById("txt1")
+        function pesquisar() {
+            var t1 = window.document.getElementById("txt1")
 
-            if(t1 == Brasil) {
+            if(t1 == 'Brasil') {
                 res.innerHTML = 'Brasileira.'
             } else {
                 res.innerHTML = 'Estrangeira'
             }
-            res.innerHTML = 'Gostou?'
         }
             
         
