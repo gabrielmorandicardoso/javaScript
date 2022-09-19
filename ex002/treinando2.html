@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+        div {
+            margin-top: 10px;
+            border: 1px solid black;
+            width: 200px;
+            height: 50px;
+        }
+
+        div h2 {
+            font-size: 1em;
+            text-align: center;
+        }
+    </style>
+    <title>formulário</title>
+</head>
+<body>
+    <form action="" method="get">
+        Número 1 <input type="number" name="txt1" id="txt1">
+         - <input type="number" name="txt2" id="txt2"> Número 2
+        <div id="res"><h2>Resultado</h2></div>
+        <input type="button" value="Subtrair" onclick="sub()">
+    </form>
+
+    <script>
+        function sub() {
+            var t1 = window.document.getElementById('txt1')
+            var t2 = window.document.getElementById('txt2')
+            var n1 = Number(t1.value)
+            var n2 = Number(t2.value)
+            var r = n1 - n2
+            res.innerHTML = r
+            
+        }
+    </script>
+</body>
+</html> 
