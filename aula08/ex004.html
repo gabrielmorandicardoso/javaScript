@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>A onde você mora?</h1>
+    <form action="" method="get">
+        <input type="text" name="txt1" id="txt1">
+       A sua nacionalidade é: <input type="button" value="pesquisar" onclick="pes()">
+       <div id="res"> Olá</div>
+    </form>
+    <script>
+        function pes() {
+            var t1 = document.getElementById("txt1")
+
+            if(t1 == Brasil) {
+                res.innerHTML = 'Brasileira.'
+            } else {
+                res.innerHTML = 'Estrangeira'
+            }
+            res.innerHTML = 'Gostou?'
+        }
+            
+        
+    </script>
+</body>
+</html>

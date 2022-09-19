@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Datag>DETRAN</Datag></title>
+</head>
+<body>
+    <h1>Velocidade Máxima 60 Km/h</h1>
+    <form action="">
+        <input type="number" name="txt1" id="txt1">
+        <input type="button" value="verificar" onclick="verificar()">
+        <div id="res"></div>
+    </form>
+    <script>
+        function verificar() {
+            var t1 = document.getElementById('txt1')
+            var vel = Number(t1.value)
+            res.innerHTML = "A sua velocidade atual é " + vel + ' Km/h'
+            if(vel > 60) {
+                res.innerHTML += "<p>Você ultrapassou o limite de velocidade, foi MULTADO!</p>" 
+            }
+            res.innerHTML += "<p>Tenh cuidado! Dirija com o cinto de segurança!</p>"
+        } 
+    </script>
+</body>
+</html>
