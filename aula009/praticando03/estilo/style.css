@@ -1,0 +1,33 @@
+@charset "UTF-8";
+    body {
+        background-color: rgb(84, 84, 240);
+        font: normal 1.5em arial;
+        color: white;
+    }
+    header {
+        text-align: center;
+    }
+    section {
+        color: black;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+    }
+    p#but {
+        text-align: center;
+    }
+    p#but > input {
+        font-size: 1em;
+        color: white;
+        background-color: rgb(117, 84, 238);
+        height: 50px;
+        width: 100px;
+        border-radius: 10px;
+    }
+    footer {
+        text-align: center;
+        font-style: italic;
+    }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Qual a sua idade?</h1>
+    </header>
+    <section>
+        <div>
+            <p>O seu ano de nascimento: 
+                <input type="number" name="txt1" id="txt1">
+            </p>
+            <p>
+                Qual o seu sexo?
+                <input type="radio" name="sex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="sex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p id="but"><input type="button" value="Verificar" onclick="verificar()"></p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
