@@ -3,7 +3,7 @@ function verificar() {
     var anoAtual = data.getFullYear()
     var anoNas = document.getElementById('txt1')
     var res = document.getElementById('res')
-    var analise = anoNas - anoAtual
+    var analise = anoNas - Number.anoAtual
 
 }
 
