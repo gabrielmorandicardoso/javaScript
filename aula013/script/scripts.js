@@ -1,4 +1,5 @@
 function calcular() {
+    
     let t1 = document.getElementById('txt1')
     let t2 = document.getElementById('txt2')
     let res = document.getElementById('res')
