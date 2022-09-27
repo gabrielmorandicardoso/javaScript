@@ -1,5 +1,5 @@
     let num = document.querySelector('input#fnum')
-    let lista = document.querySelector('input#flista')
+    let lista = document.querySelector('select#flista')
     let res = document.querySelector('div#res')
     let valores = []
 
@@ -25,7 +25,7 @@
             valores.push(Number(num.value))
             let item = document.createElement('option')
             item.text = `Valor ${num.value} foi adicionado`
-            lista.appendChild.item
+            lista.append(item)
         } else {
             window.alert('Valor inválido ou ja encontrado na lista.')
         }
