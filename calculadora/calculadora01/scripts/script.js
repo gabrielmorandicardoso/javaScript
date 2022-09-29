@@ -1,60 +1,97 @@
-    let num = document.getElementById('txtn');
-    let area = document.getElementById('area');
-    let res = document.getElementById('res');
+    let res = document.getElementById('res')
+    let operadores = ['+', '-', '*', '/']
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
     let valores = []
-    function numeros(n, a) {
-        if (a.Number(n.value) != -1) {
-            return true
+    let oper = []
+    
+    function somar(){
+        if (res == operadores) {
+            alert('adicione um número!')
+        }
+        if (res == '' ){
+            res.innerHTML = operadores[0]
+            } else {
+                res.innerHTML += ` ${operadores[0]}`
+                oper.push(operadores[0])
+            }
+    }
+    function um() {
+        if (res == ''){
+        res.innerHTML = num[0]
         } else {
-            return false
+            res.innerHTML += ` ${num[0]}`
+            valores.push(Number(num[0]))
         }
     }
-
-    function adicionar() {
-        if (Number(num.value) == '') {
-            window.alert('coloque os números!')
+    function dois() {
+        if (res == ''){
+        res.innerHTML = num[1]
         } else {
-            valores.push(Number(num.value))
-            let item = document.createElement('option')
-            item.text = `${num.value}`
-            area.appendChild(item)
+            res.innerHTML += ` ${num[1]}`
+        }
+    }
+    function tres() {
+        if (res == ''){
+        res.innerHTML = num[2]
+        } else {
+            res.innerHTML += ` ${num[2]}`
+        }
+    }
+    function quatro() {
+        if (res == ''){
+        res.innerHTML = num[3]
+        } else {
+            res.innerHTML += ` ${num[3]}`
+        }
+    }
+    function cinco() {
+        if (res == ''){
+        res.innerHTML = num[4]
+        } else {
+            res.innerHTML += ` ${num[4]}`
+        }
+    }
+    function seis() {
+        if (res == ''){
+        res.innerHTML = num[5]
+        } else {
+            res.innerHTML += ` ${num[5]}`
+        }
+    }
+    function sete() {
+        if (res == ''){
+        res.innerHTML = num[6]
+        } else {
+            res.innerHTML += ` ${num[6]}`
+        }
+    }
+    function oito() {
+        if (res == ''){
+        res.innerHTML = num[7]
+        } else {
+            res.innerHTML += ` ${num[7]}`
+        }
+    }
+    function nove() {
+        if (res == ''){
+        res.innerHTML = num[8]
+        } else {
+            res.innerHTML += ` ${num[8]}`
+        }
+    }
+    function zero() {
+        if (res == ''){
+        res.innerHTML = num[9]
+        } else {
+            res.innerHTML += ` ${num[9]}`
         }
     }
 
-    function somar() {
-        let soma = 0
-        for (let pos in valores) {
-            soma += valores[pos]
-        }
-        res.innerHTML = `${soma}`
+    function calcular() {
+        total = valores[0],  oper[0], valores[1]
+
+        res.innerHTML = total
         
     }
 
-    function subtrair() {
-        let sub = 0
-        for (let pos in valores) {
-            sub -= valores[pos]
-        }
-        res.innerHTML = `${sub}`
-        
-    }
-
-    function multiplicar() {
-        let mult = 0
-        for (let pos in valores) {
-            mult *= valores[pos]
-        }
-        res.innerHTML = `${mult}`
-        
-    }
-
-    function dividir() {
-        let divi = 0
-        for (let pos in valores) {
-            divi /= valores[pos]
-        }
-        res.innerHTML = `${divi}`
-        
-    }
-
-   
+    

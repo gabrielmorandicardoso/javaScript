@@ -28,20 +28,28 @@
         width: 180px;
     }
 
-    div p {
-        margin-bottom: 10px;
+    div#res {
+        border: solid 1px black;
+        width: 500px;
+        height: 50px;
+        
+    }
+    
+    div#botoes {
+        margin-left: 264px;
+        display: inline-block;
+        
     }
 
     input.botoes {
         margin-top: 10px;
         width: 45px;
         height: 45px;
-        border-radius: 23px;
-        border-color: rgba(0, 0, 0, 0.336);
+        
     }
 
-    p.pBotao {
-        margin-left: 42px;
+    input#zero {
+        margin-left: 56px;
     }
     
 

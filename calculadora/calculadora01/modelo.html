@@ -12,26 +12,41 @@
         <h1>Calculadora</h1>
     </header>
     <section>
-        <div>
-                <p>
-                    <input type="number" name="num" id="txtn">
-                    <input type="button" value="adicionar" onclick="adicionar()" id="add">
-                </p>
-                <p>
-                    <select name="area" id="area" size="3"></select>
-                </p>
-                
-                <p class="pBotao">
-                    <input type="button" value="+" onclick="somar()" id="somar" class="botoes">
-                    <input type="button" value="-" class="botoes" onclick="subtrair()">
-                </p>
-                <p class="pBotao">
-                    <input type="button" value="x" class="botoes" onclick="multiplicar()">
-                    <input type="button" value="/" class="botoes" onclick="dividir()">
-                </p>
-        </div>
         <div id="res">
             
+        </div>
+        <div id="botoes">
+            <p>
+                <input type="button" value="1" class="botoes" onclick="um()">
+                <input type="button" value="2" class="botoes" onclick="dois()">
+                <input type="button" value="3" class="botoes" onclick="tres()">
+            </p>
+            <p>
+                <input type="button" value="4" class="botoes" onclick="quatro()">
+                <input type="button" value="5" class="botoes" onclick="cinco()">
+                <input type="button" value="6" class="botoes" onclick="seis()">
+            </p>
+            <p>
+                <input type="button" value="7" class="botoes" onclick="sete()">
+                <input type="button" value="8" class="botoes" onclick="oito()">
+                <input type="button" value="9" class="botoes" onclick="nove()">
+            </p>
+            <input type="button" value="0" class="botoes" id="zero" onclick="zero()">
+                
+            
+        </div>
+
+        <div id="bt">
+            <p>
+                <input type="button" value="+" class="botoes" onclick="somar()">
+                <input type="button" value="-" class="botoes" onclick="subtrair()">
+            </p>
+            <p>
+                <input type="button" value="*" class="botoes" onclick="multiplicar()">
+                <input type="button" value="/" class="botoes" onclick="dividir()">
+            </p>
+
+            <input type="button" value="=" class="botoes" onclick="calcular()" >
         </div>
     </section>
     <footer>
