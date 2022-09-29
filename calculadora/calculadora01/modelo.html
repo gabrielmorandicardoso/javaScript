@@ -13,10 +13,22 @@
     </header>
     <section>
         <div>
-                <input type="number" name="num" id="txtn">
-                <input type="button" value="adicionar" onclick="adicionar()" id="add">
-                <input type="button" value="+" onclick="somar()" id="somar">
-                <select name="area" id="area" size="3"></select>
+                <p>
+                    <input type="number" name="num" id="txtn">
+                    <input type="button" value="adicionar" onclick="adicionar()" id="add">
+                </p>
+                <p>
+                    <select name="area" id="area" size="3"></select>
+                </p>
+                
+                <p class="pBotao">
+                    <input type="button" value="+" onclick="somar()" id="somar" class="botoes">
+                    <input type="button" value="-" class="botoes" onclick="subtrair()">
+                </p>
+                <p class="pBotao">
+                    <input type="button" value="x" class="botoes" onclick="multiplicar()">
+                    <input type="button" value="/" class="botoes" onclick="dividir()">
+                </p>
         </div>
         <div id="res">
             

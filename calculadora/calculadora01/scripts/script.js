@@ -30,4 +30,31 @@
         
     }
 
+    function subtrair() {
+        let sub = 0
+        for (let pos in valores) {
+            sub -= valores[pos]
+        }
+        res.innerHTML = `${sub}`
+        
+    }
+
+    function multiplicar() {
+        let mult = 0
+        for (let pos in valores) {
+            mult *= valores[pos]
+        }
+        res.innerHTML = `${mult}`
+        
+    }
+
+    function dividir() {
+        let divi = 0
+        for (let pos in valores) {
+            divi /= valores[pos]
+        }
+        res.innerHTML = `${divi}`
+        
+    }
+
    
