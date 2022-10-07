@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body{
+  padding: 1rem;
+}
+
+body.dark-mode{
+  background-color: #181818;
+}
+body.dark-mode b,
+body.dark-mode p,
+body.dark-mode label,
+body.dark-mode span,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6{
+  color: #fff;
+}
+
+section{
+  border: solid 1px #e0e0e0;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.blocos .bloco{
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+  border: solid 1px #757575;
+  border-radius: 5px;
+  transition: all .2s;
+}
+
+.bloco.circulo{
+  border-radius: 50%;
+}
+
+.bloco-1{
+  background-color: red;
+}
+.bloco-2{
+  background-color: blue;
+}
+.bloco-3{
+  background-color: green;
+}
+.bloco-4{
+  background-color: pink;
+}
